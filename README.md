@@ -1,4 +1,4 @@
-# todolist
+# todo-list
 
 ## Project setup
 ```

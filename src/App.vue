@@ -1,31 +1,32 @@
 <template>
-  <div class="container">
-    <Todolist/>
-  </div>
+	<div id="app">
+		<Todo/>
+		<Footer/>
+	</div>
 </template>
 
 <script>
-import Todolist from './todolist.vue'
+import Todo from "./pages/todolist.vue"
+import Footer from "./components/Footer.vue"
 
 export default {
-  name: 'App',
-  components: {
-    Todolist
-  }
-}
+	name: 'App',
+	components: {
+		Todo,
+		Footer
+	},
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
 }
-.container {
-  display: flex;
-  justify-content: center;
+.router-wrapper {
+	min-height: 60vh;
 }
 </style>
